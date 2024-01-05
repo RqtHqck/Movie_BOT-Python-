@@ -1,25 +1,15 @@
 # AIOGRAM======================================================================================
 from aiogram import Bot, Dispatcher, executor, types
 from config import token_API
-# Keyboards
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-# Imported IKB
-from ikb import ikb_make
+# KEYBOARDS
+from Tg_Bot.Aiogram.GIT_LEARN.Keyboards.ikb import ikb_make
 
-# LAST YEAR====================================================================================
-from kinogo_last_year_f import find_5films_lastyear
-from kinogo_last_year_s import find_5serials_lastyear
-from kinogo_recom_film import recommend_film
-import time
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+# FUNCTIONS====================================================================================
+from Tg_Bot.Aiogram.GIT_LEARN.Functions.kinogo_last_year_f import find_5films_lastyear
+from Tg_Bot.Aiogram.GIT_LEARN.Functions.kinogo_last_year_s import find_5serials_lastyear
+from Tg_Bot.Aiogram.GIT_LEARN.Functions.kinogo_recom_film import recommend_film
 
-# RANDOM=======================================================================================
+# MODULES=======================================================================================
 import random
 
 bot = Bot(token=token_API)
